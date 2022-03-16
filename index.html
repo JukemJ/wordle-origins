@@ -5,15 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wordle: Origins</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form>
-        <label for="guessText"> Wordle </label>
-        <input id="guessText" type="text" placeholder="enter here">
-    </form>
-    <button id="guess">Check</button>
-
-    <h1></h1>
+    <header>
+        <!-- <form>
+            <label for="guessText"> Wordle </label>
+            <input id="guessText" type="text" placeholder="enter here">
+        </form> -->
+        <input id="guessText" type="text" placeholder="enter here" maxlength="5">
+        <button id="guess">Check</button><br>
+    </header>
+    <main>
+        <!-- <ul>
+            <li class="letterBox">A</li>
+            <li class="letterBox">B</li>
+            <li class="letterBox">C</li>
+            <li class="letterBox">D</li>
+            <li class="letterBox">E</li>
+        </ul> -->
+        <ul>
+            <li  class="letterBox" id="letterOne"></li>
+            <li  class="letterBox" id="letterTwo"></li>
+            <li  class="letterBox" id="letterThree"></li>
+            <li  class="letterBox" id="letterFour"></li>
+            <li  class="letterBox" id="letterFive"></li>
+        </ul>
+    </main>
 
     <script></script>
 </body>

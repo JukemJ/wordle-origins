@@ -1,0 +1,30 @@
+body{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+header{
+    width: 100%;
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+li{ 
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    padding-top: 10%;
+    text-align: center;
+    height: 80px;
+    width: 100px;
+    display: inline-block;
+    border: 5px solid black;
+    border-radius: 10px;
+    font-size: 2rem;
+}
+.letterBox{
+    background: white;
+}
