@@ -33,28 +33,23 @@ function wordle(){
         if (userGuessWord[i] == correctWord[i]){
             correctLetter[i] = 1
         }
+        else if(correctWord.includes(userGuessWord[i])) correctLetter[i] = 2
     }
 
-    //win condition check
-    //sum correctLetter array to determine if guess is correct
-    if (correctLetter.reduce((partialSum, a) => partialSum + a, 0) == 5){
-        //turn em all green background
-        letterOne.style.background = "green"
-        letterTwo.style.background = "green"
-        letterThree.style.background = "green"
-        letterFour.style.background = "green"
-        letterFive.style.background = "green"
-        alert('You win!')
-        //then some kinda celebration
-        return
-        
-    }
     //highlighting correct letters
     if (correctLetter[0] == 1){letterOne.style.background = "green"}
     if (correctLetter[1] == 1){letterTwo.style.background = "green"}
     if (correctLetter[2] == 1){letterThree.style.background = "green"}
     if (correctLetter[3] == 1){letterFour.style.background = "green"}
     if (correctLetter[4] == 1){letterFive.style.background = "green"}
+
+    if (correctLetter[0] == 2){letterOne.style.background = "yellow"}
+    if (correctLetter[1] == 2){letterTwo.style.background = "yellow"}
+    if (correctLetter[2] == 2){letterThree.style.background = "yellow"}
+    if (correctLetter[3] == 2){letterFour.style.background = "yellow"}
+    if (correctLetter[4] == 2){letterFive.style.background = "yellow"}
+
+    
 
         
     

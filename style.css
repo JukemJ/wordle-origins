@@ -5,10 +5,17 @@ body{
     justify-content: center;
     align-items: center;
     gap: 20px;
+    background: lightgray;
 }
 header{
     width: 100%;
     text-align: center;
+}
+h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
 }
 ul{
     list-style: none;
@@ -21,10 +28,28 @@ li{
     height: 80px;
     width: 100px;
     display: inline-block;
-    border: 5px solid black;
+    border: 4px solid black;
     border-radius: 10px;
     font-size: 2rem;
 }
 .letterBox{
     background: white;
+}
+button{
+    display: none;
+    border: none;
+    background: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
+}
+@media screen and (max-width: 770px) {
+   li{
+    height: 40px;
+    width: 50px;
+    border: 2px solid black;
+   } 
+   body{
+       padding: 50px 20px
+   }
+    
 }
