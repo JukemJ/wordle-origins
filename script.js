@@ -16,7 +16,6 @@ function wordle(){
     userGuessWord = document.querySelector('#guessText').value.toLowerCase().split('')
     if (userGuessWord.length < 5) alert('Not enough letters!')
     else{
-        
         for(i = 0; i < 5; i++){
             previous ='<span '
             letterArr[i].innerText = userGuessWord[i].toUpperCase()
@@ -35,9 +34,6 @@ function wordle(){
             document.querySelector('#previousGuess').innerHTML += previous
         }
         document.querySelector('#previousGuess').innerHTML += '<br><br><br><br>'
-
-        //show previous guesses
-        // document.querySelector('#previousGuess').innerText += userGuessWord.join('').toUpperCase() + '\n'
     }
 }
 
