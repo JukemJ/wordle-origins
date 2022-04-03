@@ -24,11 +24,11 @@ function wordle(){
                 previous +=`style="background:green;">${userGuessWord[i].toUpperCase()}</span>`
             }
             else if(correctWord.includes(userGuessWord[i])){
-                letterArr[i].style.background = 'yellow'
+                letterArr[i].style.background = 'gold'
                 previous +=`style="background:yellow;">${userGuessWord[i].toUpperCase()}</span>`
             }
             else {
-                letterArr[i].style.background = 'white'
+                letterArr[i].style.background = 'gray'
                 previous += `style="background:white;">${userGuessWord[i].toUpperCase()}</span>`
             }
             document.querySelector('#previousGuess').innerHTML += previous
