@@ -5,7 +5,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background: lightgray;
+    background: white;
 }
 header{
     width: 100%;
@@ -28,8 +28,8 @@ li{
     height: 80px;
     width: 100px;
     display: inline-block;
-    border: 4px solid black;
-    border-radius: 10px;
+    border: 4px solid gray;
+    /* border-radius: 5px; */
     font-size: 2rem;
 }
 .letterBox{
@@ -41,6 +41,22 @@ button{
     background: white;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.3rem;
+}
+section{
+    font-family: 'Ubuntu', sans-serif;
+}
+#previousGuess{
+    padding: 2rem 0;
+    width: 40%;
+    text-align: center;
+    overflow: hidden;
+}
+#previousGuess span{
+    padding: 3%;
+    margin: 15px;
+    font-size: larger;
+    font-weight: bold;
+    border: 2px solid lightgray;
 }
 @media screen and (max-width: 770px) {
    li{
