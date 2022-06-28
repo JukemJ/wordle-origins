@@ -14,9 +14,6 @@ console.log(correctWord.join('')) //this is just so you can see the answer in th
 
 function wordle(){
     userGuessWord = document.querySelector('#guessText').value.toLowerCase().split('')
-
-
-
     if (userGuessWord.length < 5) alert('Not enough letters!')
     else{
         for(i = 0; i < 5; i++){
